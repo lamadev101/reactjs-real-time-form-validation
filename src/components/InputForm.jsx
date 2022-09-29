@@ -10,7 +10,7 @@ const InputForm = (props) => {
   }
   return (
     <div className='formAttr'>
-        <label htmlFor="">{label}:</label>
+        <label>{label}:</label>
         <input {...inputProps} onChange={onChange} onBlur={handleFocus} onFocus={()=>inputProps.name === "confirmPassword" && setFocused(true)} focused={focused.toString()} />
         <span>{errorMsg}</span>
     </div>
