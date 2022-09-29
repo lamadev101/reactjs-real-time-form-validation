@@ -1,0 +1,26 @@
+.formAttr{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+}
+input:invalid[focused="true"]~span{
+    display: block;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+label{
+    margin-top: 6px;
+    font-weight: 500;
+    color: rgb(41, 39, 39);
+}
+span{
+    font-size: 12px;
+    color: red;
+    font-weight: 400;
+    display: none;
+}
